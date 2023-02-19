@@ -1,0 +1,74 @@
+/*======== /pixel button ========*/
+  /* ================== */
+  .gui_button {
+    display: flex;
+    width: -moz-fit-content;
+    width: fit-content;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 1em;
+}
+.gui_button > p {
+    color: #fefefe;
+    background-color: #9a4dff;
+    padding: 0 3px 3px 5px;
+    z-index: 2;
+    margin: 0;
+    /*! text-shadow: 2px 2px 0 #000000; */
+    outline: solid #7b3dcc 4px;
+    font-family: "Noto Sans", serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*======== FOR AUTH FORM ========*/
+.gui_button > p > img {
+    height: 32px;
+    margin-right: 5px;
+    filter: drop-shadow(2px 2px 0 #000000);
+}
+/*======== /FOR AUTH FORM ========*/
+.gui_button > .horisontal {
+    position: absolute;
+    background-color: #7b3dcc;
+    width: calc(100% + 16px);
+    height: calc(100% + 6px);
+    padding: 0 5px;
+    border: solid #111111 3px;
+}
+.gui_button > .vertical {
+    position: absolute;
+    background-color: #7b3dcc;
+    width: calc(100% + 6px);
+    height:  calc(100% + 16px);
+    padding: 5px 0;
+    border: solid #111111 3px;
+}
+.gui_button:hover p {
+    background-color: #7b3dcc;
+    /*! text-shadow: 3px 3px 0 #000000; */
+    outline: solid #9a4dff 4px;
+}
+.gui_button:hover .vertical {
+    background-color: #9a4dff;
+}
+.gui_button:hover .horisontal {
+    background-color: #9a4dff;
+}
+.gui_button:active p {
+    background-color: #6232A3;
+    color: darkgray;
+    text-shadow: 4px 4px 0 #000000;
+}
+.gui_button:active .vertical {
+    border: solid darkgray 2px;
+}
+.gui_button:active .horisontal {
+    border: solid darkgray 2px;
+}
+
