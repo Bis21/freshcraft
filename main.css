@@ -3,7 +3,11 @@
 
 :root{
     --header-height: 83px;
-    --btn-pixel-height: 52.5px;
+}
+@media (max-width: 991.98px) {
+    :root{
+        --header-height: 62px;
+    }
 }
 
 a, .btn{
@@ -119,25 +123,4 @@ body{
 }
 .btn-blue::before, .btn-blue::after{
     background: var(--bs-btn-bg);
-}
-
-/* pixel corner */
-.btn-pixel::after, .btn-pixel::before{
-    content: "";
-    position: absolute;
-    height: calc(var(--btn-pixel-height) - 0.5rem);
-    width: .25rem;
-    bottom: .25rem;
-}
-.btn-pixel{
-    height: var(--btn-pixel-height);
-    padding: calc( var(--btn-pixel-height)/8) .5rem;
-    line-height: calc( var(--btn-pixel-height)*3/4);
-    margin: 0 .5rem;
-}
-.btn-pixel::before{
-    left: .25rem;
-}
-.btn-pixel::after{
-    right: .25rem;
 }
